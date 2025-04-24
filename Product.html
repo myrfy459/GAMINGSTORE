@@ -7,7 +7,7 @@
     <title>Gaming Store</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="file:///D:/X%20PPLG%202/DPK%20B/lpgp%20gaming%20store/Screenshot_2024-08-29_223135-removebg-preview.png">
-  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header>
@@ -26,10 +26,11 @@
             <div>
                 <ul class="ya">
                     <li><a href="index.html" class="hover-effect">Menu</a></li>
-                    <li><a href="#product" class="hover-effect">Product</a></li>
+                    <li><a href="Product.html" class="hover-effect">Product</a></li>
                     <li><a href="#walpapper" class="hover-effect">Walpapper</a></li>
-                    <li><a href="#tentang kami" class="hover-effect">Tentang Kami</li>
+                    <li><a href="About.html" class="hover-effect">About</li>
                     <li><a href="Login.html"class="tbl-biru">sign up</a></li>
+                    <li><a href="#" class="hover-effect cart-icon"><i class="fas fa-shopping-cart"></i></a></li>
                 </ul>
             </div>
         </div>
@@ -89,6 +90,35 @@
             </div>
         </a>
     </div>
+    <div class="overlay"></div>
+    <div class="cart-popup">
+        <div class="cart-header">
+            <h2>Keranjang Belanja</h2>
+            <button class="close-cart"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-body">
+            <div class="empty-cart">
+                <i class="fas fa-shopping-cart"></i>
+                <p>Keranjang Kosong</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Cart functionality
+        const cartIcon = document.querySelector('.cart-icon');
+        const cartPopup = document.querySelector('.cart-popup');
+        const closeCart = document.querySelector('.close-cart');
+        const overlay = document.querySelector('.overlay');
+
+        function toggleCart() {
+            cartPopup.classList.toggle('active');
+            overlay.classList.toggle('active');
+        }
+
+        cartIcon.addEventListener('click', toggleCart);
+        closeCart.addEventListener('click', toggleCart);
+        overlay.addEventListener('click', toggleCart);
+    </script>
 </body>
 <footer class="AboutUs">
     <div>

@@ -18,7 +18,7 @@ document.getElementById('login').addEventListener('submit', function(event) {
     const storedPassword = localStorage.getItem('password');
 
     if (usernameInput === storedUsername && passwordInput === storedPassword) {
-        alert('Login successful!');
+        alert('Login Berhasil!');
         window.location.href = 'index.html';
     } else {
         attemptCount++;
@@ -36,7 +36,7 @@ document.getElementById('login').addEventListener('submit', function(event) {
     }
 });
 
-/*
+
 function startCountdown(seconds) {
     let timeLeft = seconds;
     document.getElementById('countdown').innerText = `Waktu tersisa: ${timeLeft} detik`;
@@ -53,4 +53,4 @@ function startCountdown(seconds) {
             document.getElementById('countdown').innerText = ''; // Hapus tampilan countdown
         }
     }, 1000);
-}*/
+}

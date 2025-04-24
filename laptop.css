@@ -141,6 +141,7 @@ nav ul li a {
     line-height: 100px;
     text-align: left;
     font-family: Arial, Helvetica, sans-serif;
+    margin-top: 100px;
 }
 
 .social-media img {
@@ -188,15 +189,16 @@ nav ul li a {
     padding: 0%;
     display: flex;
     width: 100%;
-    
 }
+
 .laptop {
     justify-content: space-between;
-    background: url("background/12.jpg");
+    background: url("background/12.jp");
     padding: 0px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-
+    height: 100%;
+    width: 100%;
 }
 
 .judul h1{
@@ -207,10 +209,6 @@ nav ul li a {
     margin-bottom: 20px;
     background-color: #ffffff;
     border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
     height: 70px;
 }
 
@@ -221,16 +219,8 @@ nav ul li a {
     width: 500px;
     height: 700px;
     border-radius: 15px;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    -ms-border-radius: 15px;
-    -o-border-radius: 15px;
     transition: border-color 0.2s, opacity 0.2s, transform 0.3s ease;
     opacity: 1;
-    -webkit-transition: border-color 0.2s, opacity 0.2s, transform 0.3s ease;
-    -moz-transition: border-color 0.2s, opacity 0.2s, transform 0.3s ease;
-    -ms-transition: border-color 0.2s, opacity 0.2s, transform 0.3s ease;
-    -o-transition: border-color 0.2s, opacity 0.2s, transform 0.3s ease;
 }
 
 .laptop .lap1:hover {
@@ -254,13 +244,8 @@ nav ul li a {
 .laptop .lap1 .laptop-img2 {
     height: 300px;
     transform: translateX(10px);
-    -webkit-transform: translateX(10px);
-    -moz-transform: translateX(10px);
-    -ms-transform: translateX(10px);
-    -o-transform: translateX(10px);
     margin-bottom: 30px;
 }
-
 
 .laptop .lap1 h1{
     font-size: 30px;
@@ -272,8 +257,3 @@ nav ul li a {
     margin-left: 50px;
     font-size: 15px;
 }
-
-
-
-
- 

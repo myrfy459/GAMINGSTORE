@@ -23,7 +23,7 @@ const timerInterval = setInterval(updateTimer, 1000);
 document.getElementById('payment-form').addEventListener('submit', function(event) {
     event.preventDefault(); 
     alert("Pembayaran diproses!"); 
-    window.location.href = "Laptop.html";
+    window.location.href = "Terimakasih.html";
     
 }); 
 
