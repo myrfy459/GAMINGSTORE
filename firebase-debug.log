@@ -1,0 +1,49 @@
+[debug] [2025-04-10T13:16:41.841Z] ----------------------------------------------------------------------
+[debug] [2025-04-10T13:16:41.853Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Rasya\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2025-04-10T13:16:41.854Z] CLI Version:   14.1.0
+[debug] [2025-04-10T13:16:41.854Z] Platform:      win32
+[debug] [2025-04-10T13:16:41.854Z] Node Version:  v22.13.1
+[debug] [2025-04-10T13:16:41.854Z] Time:          Thu Apr 10 2025 20:16:41 GMT+0700 (Western Indonesia Time)
+[debug] [2025-04-10T13:16:41.854Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-04-10T13:16:41.921Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-04-10T13:16:41.923Z] > authorizing via signed-in user (razyafahmi123@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\X PPLG 2\DPK B\HTML\WEB GamingStore
+
+[debug] [2025-04-13T06:09:20.630Z] ----------------------------------------------------------------------
+[debug] [2025-04-13T06:09:20.633Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Rasya\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2025-04-13T06:09:20.633Z] CLI Version:   14.1.0
+[debug] [2025-04-13T06:09:20.633Z] Platform:      win32
+[debug] [2025-04-13T06:09:20.634Z] Node Version:  v22.13.1
+[debug] [2025-04-13T06:09:20.634Z] Time:          Sun Apr 13 2025 13:09:20 GMT+0700 (Western Indonesia Time)
+[debug] [2025-04-13T06:09:20.634Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-04-13T06:09:20.644Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-04-13T06:09:20.645Z] > authorizing via signed-in user (razyafahmi123@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\X PPLG 2\DPK B\HTML\WEB GamingStore
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 

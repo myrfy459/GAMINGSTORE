@@ -1,0 +1,245 @@
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="file:///D:/X%20PPLG%202/DPK%20B/lpgp%20gaming%20store/Screenshot_2024-08-29_223135-removebg-preview.png">
+  
+</head>
+<style>
+.cart-sidebar {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 320px;
+    height: 100%;
+    background: linear-gradient(to bottom, #111, #1a1a1a);
+    color: #fff;
+    box-shadow: -5px 0 20px rgba(0,0,0,0.6);
+    padding: 25px;
+    transition: right 0.4s ease;
+    z-index: 9999;
+    overflow-y: auto;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+}
+
+.cart-sidebar.open {
+    right: 0;
+}
+
+.cart-sidebar h2 {
+    margin-top: 0;
+    font-size: 22px;
+    color: #e50914;
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e50914;
+    padding-bottom: 10px;
+}
+
+.cart-sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.cart-sidebar li {
+    margin-bottom: 20px;
+    padding: 12px;
+    background-color: #2c2c2c;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(255, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.cart-sidebar li:hover {
+    transform: scale(1.02);
+    background-color: #333;
+}
+
+.cart-sidebar li strong {
+    color: #e50914;
+    font-size: 16px;
+}
+
+.cart-sidebar li button {
+    margin-top: 8px;
+    padding: 6px 10px;
+    background-color: #ff3b3f;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 13px;
+    transition: all 0.3s ease;
+}
+
+.cart-sidebar li button:hover {
+    background-color: #ff5e5e;
+    transform: translateY(-1px);
+}
+
+.close-cart-btn {
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px;
+    background-color: #222;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.close-cart-btn:hover {
+    background-color: #333;
+}
+
+.checkout-btn {
+    margin-top: 20px;
+    width: 100%;
+    padding: 12px;
+    background-color: #e50914;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.checkout-btn:hover {
+    background-color: #f6343e;
+    transform: scale(1.03);
+}
+
+</style>
+
+
+<!-- Sidebar Cart -->
+<div id="cartSidebar" class="cart-sidebar">
+    <h2>Keranjang Belanja</h2>
+    <ul id="cartItems"></ul>
+    <button class="checkout-btn" onclick="handleCheckout()">Checkout Sekarang</button>
+    <button onclick="closeCart()" class="close-cart-btn">Tutup</button>
+</div>
+<script src="cart1.js"></script>
+<body>
+    <header>
+    <nav>
+      <div class="header-container">
+        <div class="logo">
+            <img src="pnf/Screenshot_2024-08-29_223135-removebg-preview.png" alt="website Logo">
+        </div>
+        <div class="header-text">
+            <h1>GamingStore</h1>
+        </div>
+      </div>
+        
+       </div>
+        <div>
+            <div>
+                <ul class="ya">
+                    <li><a href="" class="hover-effect">Menu</a></li>
+                    <li><a href="Product.html" class="hover-effect">Product</a></li>
+                    <li><a href="#walpapper" class="hover-effect">Walpapper</a></li>
+                    <li><a href="About.html" class="hover-effect">About</li>
+                    <li><a href="Login.html"class="tbl-biru">sign up</a></li>
+                    <li><a href="#" class="hover-effect" onclick="toggleCart()"><i class="fas fa-shopping-cart"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    </header>
+    <div class="video-container">
+        <video id="myVideo" autoplay muted >
+            <source src="video/2023 ROG Strix G16-18 - RAISE YOUR GAME. CARRY YOUR SQUAD.  _ ROG.mp4" type="video/mp4">
+        </video>
+        <div class="video-blur"></div>
+        <div class="overlay-text">
+            <h1>HI,Welcome To GamingStore</h1>
+            <h5>Gaming Strore bertujuan menyediakan produk gaming berkualitas tinggi dan akses ke peralatan terbaru, termasuk konsol, aksesori, perangkat keras, dan perangkat lunak. Kami berkomitmen meningkatkan pengalaman bermain game pelanggan dan membangun komunitas gaming yang ramah. Dengan layanan pelanggan yang luar biasa, kami ingin menjadi destinasi utama bagi para gamer untuk membeli perangkat dan mendapatkan informasi terkini tentang tren gaming.</h5>
+        </div>
+    </div>
+    <div class="content-web">
+        <h2>Kami Menjual</h2>
+        <p>
+
+        </p>
+        <div class="gambar-content">
+            <img src="home content/3-removebg-preview.png" alt="gambar" class="content-image">
+            <div class="deskripsi">
+                <h2>Macam Macam Laptop Gaming</h2>
+                <p> Laptop berperforma tinggi yang dirancang untuk menjalankan game dengan grafis intensif. Dilengkapi dengan prosesor cepat, kartu grafis kuat, RAM besar, dan layar dengan refresh rate tinggi, laptop ini memberikan gameplay yang lancar. Biasanya dilengkapi dengan sistem pendingin canggih dan keyboard dengan pencahayaan RGB, laptop gaming juga menawarkan desain yang tangguh dan portabilitas bagi para gamer.</p>
+            </div>
+        </div>
+        <div class="gambar-content">
+            <img src="home content/1-removebg-preview.png" alt="gambar" class="content-image">
+            <div class="deskripsi">
+                <h2>Macam Macam Aksesoris</h2>
+                <p>headset, keyboard, mouse, dan mousepad yang dirancang untuk meningkatkan kenyamanan, performa, dan pengalaman bermain game.</p>
+            </div>
+        </div>
+        <div class="gambar-content">
+            <img src="home content/Untitled_design-removebg-preview.png" alt="gambar" class="content-image">
+            <div class="deskripsi">
+                <h2>Macam Macam Monitor</h2>
+                <p>Penjualan monitor gaming menawarkan layar dengan refresh rate tinggi, resolusi tajam, dan fitur seperti G-Sync atau FreeSync untuk tampilan yang lebih halus. Monitor ini dirancang untuk memberikan pengalaman visual terbaik bagi para gamer, dengan respons cepat dan kualitas gambar superior.</p>
+            </div>
+        </div>
+        <div class="gambar-content">
+            <img src="home content/2-removebg-preview.png" alt="gambar" class="content-image">
+            <div class="deskripsi">
+                <h2>Macam Macam Grapich Card</h2>
+                <p> berkinerja tinggi yang dirancang untuk meningkatkan kualitas visual dan performa game. Dengan fitur seperti memori besar, clock speed tinggi, dan dukungan teknologi seperti ray tracing dan DLSS, VGA gaming memungkinkan rendering grafis yang lebih realistis dan gameplay yang lebih halus.</p>
+            </div>
+        </div>
+        </div>
+    <script src="unit.js"></script>
+    <div class="Aksesoris">
+        <a href="#">
+        <div class="mouse">
+            <img src="Aksesoris/Foto/High precision RGB gaming mouse.jpeg" alt="gambar" class="aksesoris-image">
+            <h1>Mouse</h1>
+        </div>
+        </a>
+        <a href="#">
+        <div class="keyboard">
+            <img src="Aksesoris/Foto/GXT 830-RW Avonn Gaming Keyboard.jpeg" alt="gambar" class="aksesoris-image">
+            <h1>Keyboard</h1>
+        </div>
+        </a>
+        <a href="#">
+        <div class="speaker">
+            <img src="Aksesoris/Foto/2_1 Gaming speaker set with pulsating LED.jpeg" alt="gambar" class="aksesoris-image">
+            <h1>Speaker</h1>
+        </div>
+        </a>
+    </div>
+    
+</body>
+
+<footer class="AboutUs">
+    <div>
+        <img src="tentang kami/FDFFE426-0A29-40D5-8E26-C838EB26CA8F.jpeg">
+    </div>
+    <div class="social-media">
+        <a href="https://x.com/razzzygy?t=LgVdbr_VkTmmXZyxkVMSpw&s=09"><img src="tentang kami/Elon Musk.jpeg" width="30px" alt="Twiter"></a>
+        <a href="#"><img src="tentang kami/wa.jpeg" width="30px" alt="Whatssap"></a>
+        <a href="https://www.instagram.com/gaso.similikitiw?igsh=eTF4Nmx3c2t3bHhk"><img src="tentang kami/download.jpeg" width="30px" alt="Instagram"></a>
+    </div>
+    <div class="Alamat">
+        <h3>Contact</h3>
+        <p>Telp : (0281) 621908</p>
+        <p>WA: 085227018871</p>
+        <p>NO SERVICE: 085227396333</p>
+        <p>Alamat: Jl. Dr. Angka No.85A, Kec. Purwokerto Timur, Kabupaten Banyumas, Jawa Tengah 53114</p>
+    </div>
+</footer>
+</html>

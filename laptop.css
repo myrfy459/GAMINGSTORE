@@ -1,0 +1,259 @@
+* {
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family:'open sans',sans-serif;
+    background-color: #0f0404;
+    line-height: normal;
+}
+
+.wrapper {
+    width: 1100--px;
+    margin: auto;
+    position: relative;
+
+
+}
+
+.logo a {
+    font-size: 50px;
+    font-weight: 800;
+    float: left;
+    font-family:sans-serif;
+    color: rgb(255, 0, 0);
+}
+
+
+nav {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    line-height: 90px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0px;
+    background: #310d0d ;
+    background: transparent;
+    backdrop-filter: blur(10%);
+}
+
+nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+
+}
+
+nav ul li a {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 16px 10px 16px;
+    text-decoration: none ;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    margin-right: none;
+    top: 0%;
+}
+
+
+.hover-effect {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.hover-effect:hover {
+    background-color: red;
+    padding:  10px 16px 10px 16px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+.header-container {
+    display: flex;
+    align-items: center; 
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+    margin-top: px;
+    transform: translateY(20px);
+    -webkit-transform: translateY(20px);
+    -moz-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    -o-transform: translateY(20px);
+}
+
+.header-text {
+    margin-left: 20px; 
+}
+
+.header-text h1 {
+    font-size: 50px; 
+    margin-top: -5px;
+    margin-left: -20px;
+    color: red;
+}
+
+.ya {
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 900px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 30px;
+    
+   
+
+}
+
+.tbl-biru {
+    background-color: #FF6500;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    
+}
+
+/* About us*/
+
+.AboutUs {
+    background: linear-gradient(to right, #381775,#381775,#880505,#0f0404);
+    line-height: 100px;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 100px;
+}
+
+.social-media img {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin-left: 15px ;
+    width: 50px;
+    transform: translateY(10px);
+    transform: translateX(1600px);
+    -webkit-transform: translateX(1600px);
+    -moz-transform: translateX(1600px);
+    -ms-transform: translateX(1600px);
+    -o-transform: translateX(1600px);
+    margin-top: 20px;
+}
+
+.Alamat {
+ line-height: 2;
+ margin-left: 100px;
+ margin-top: 20px;
+ transform: translateY(-70px);
+ -webkit-transform: translateY(-70px);
+ -moz-transform: translateY(-70px);
+ -ms-transform: translateY(-70px);
+ -o-transform: translateY(-70px);
+ font-size: 15px;
+ color: #ffffff;
+ text-shadow: 2px 5px 4px rgba(0, 0, 0, 0.5);
+}
+
+.background-img{
+    width: 100%;
+    height: 50%;
+}
+
+
+
+
+/*Tampilan Laptop Produk*/
+
+.laptop-slide img{
+    padding: 0%;
+    display: flex;
+    width: 100%;
+}
+
+.laptop {
+    justify-content: space-between;
+    background: url("background/12.jp");
+    padding: 0px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 100%;
+    width: 100%;
+}
+
+.judul h1{
+    text-align: center;
+    color: purple;
+    font-size: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    height: 70px;
+}
+
+.laptop .lap1{
+    margin-left: 60px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    width: 500px;
+    height: 700px;
+    border-radius: 15px;
+    transition: border-color 0.2s, opacity 0.2s, transform 0.3s ease;
+    opacity: 1;
+}
+
+.laptop .lap1:hover {
+    border-color: red;
+    opacity: 0.8;
+    transform: scale(1.05);
+}
+
+.laptop .lap1 img{
+    background: transparent;
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin-left: 45px;
+}
+
+.laptop .lap1 .laptop-img1 {
+    height: 300px;
+}
+
+.laptop .lap1 .laptop-img2 {
+    height: 300px;
+    transform: translateX(10px);
+    margin-bottom: 30px;
+}
+
+.laptop .lap1 h1{
+    font-size: 30px;
+    text-align: center;
+}
+
+.laptop p {
+    max-width: 400px;
+    margin-left: 50px;
+    font-size: 15px;
+}
